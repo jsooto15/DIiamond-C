@@ -1,0 +1,399 @@
+
+:root{
+    --nav-color:#ffffff62;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+   margin: 0%;
+   padding: 0%;
+
+   font-family: 'Bebas Neue', cursive;
+ 
+}
+.BK-img{
+       background-image: url(../IMG1/fiscalidad-del-forex.jpg);
+       background-size: cover;
+}
+img{
+    width: 20px;
+}
+
+
+.IMG{
+    background-color: #094c66;
+    background-size:cover;
+}
+/*Jumbotron*/
+.jumbotron{
+    background-image: url(../IMG1/Jumbotron.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+
+    color: black;
+    text-shadow: 4px 4px 6px white;
+    border-radius: 0%;
+    margin-bottom: 0;
+
+    p{
+    font-size: 30px;
+    }
+
+   .textindex{
+    text-align: center;
+    padding: 180px;
+    }
+    .letra{
+        font-size: 40px;
+    }
+
+}
+
+img{
+    height: 550px;
+    width: 40%;
+}
+h2{
+    color: black;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+p{
+    color: black;
+    text-align: center;
+    text-decoration:wavy;
+}
+/*boton de mas info que lleva a somo*/
+button{
+    background-color: aquamarine;
+   /* box-shadow: #fff 4px 4px 0px;*/
+    border-radius: 8px;
+    transition: transform 20ms, box-shadow 200ms;
+
+    button.active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+     }
+}
+
+h3{
+    color: #fff;
+
+}
+/*Formulario de contacto*/
+.container1{
+    text-align: center;
+    background-color: var(--nav-color);
+    width: 70%;
+    height: 70%;
+    border:5px solid rgba(0, 0, 0, 0.623);
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 21%;
+}
+.c1{
+    background-color: rgba(2, 137, 255, 0.411);
+    border-top: 10px solid black;
+}
+/*acerca de*/
+.acercade{
+    width: 60%;
+    background-color: var(--nav-color);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: medium;
+    margin-bottom: 80px;
+    border: 3.5px black solid;
+
+    &:hover{  
+    transform: scale(1.08);
+    transition: all 0.7s;
+    }
+}
+/*galeria de fotos de acerca de*/
+.galery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    padding: 20px;
+    grid-gap: 10px;
+    margin-bottom: 50px;
+
+    .galery--item{
+    position: relative;
+
+    &:hover{
+     transform: scale(1.08);
+    transition: all 0.7s;
+    }
+    &:nth-child(1){
+    grid-column: span 2;
+    }
+    &:nth-child(6){
+    grid-column: span 2;
+    }
+    &:nth-child(5){
+    grid-row: span 2;
+    }
+    }
+    h1{
+    text-align: center;
+    color: #fff;
+    }
+    h4{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    }
+.galery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galery--item:nth-child(1){
+    grid-column: span 2;
+}
+.galery--item:nth-child(6){
+    grid-column: span 2;
+}
+.galery--item:nth-child(5){
+    grid-row: span 2;
+}
+
+@media only screen and (min-width:668px){
+    .galery-container{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media only screen and (min-width: 780px) {
+    .galery-container{
+    grid-template-columns: repeat(3, 1fr);
+    }
+   
+}
+}
+.galery--item:nth-child(1){
+    grid-column: span 2;
+}
+.galery--item:nth-child(6){
+    grid-column: span 2;
+}
+.galery--item:nth-child(5){
+    grid-row: span 2;
+}
+@media only screen and (min-width:668px){
+    .galery-container{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media only screen and (min-width: 780px) {
+    .galery-container{
+    grid-template-columns: repeat(3, 1fr);
+    }
+   
+}
+
+/*Ubicacion*/
+.ubicacion{
+    
+    width: 60%;
+    background-color: var(--nav-color);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 8%;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: medium;
+
+    img{
+    width: 60%;
+    height: 80%;
+    }
+    
+    &:hover{
+    transform: scale(1.08);
+    transition: all 0.7s;
+    }
+    img:hover{
+    transform: scale(1.08);
+    transition: all 0.7s;
+    }
+}
+
+// Porductos//
+.grid-productos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 600px;
+    padding: 10px;
+    grid-gap: 15px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+    .grid-productos{
+    position: relative;
+   
+}
+.productos--img{
+     width: 100%;
+    height: 100%;
+}
+.galery--item--productos{
+    position: relative;
+    &:hover{
+     transform: scale(1.08);
+    transition: all 0.7s;
+}
+}
+
+.galery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h4{
+    color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+}
+}
+
+/* Agrego Imagenes del Carousel como Background*/
+.first-img-carousel{
+    height: 80vh;
+    background-image: url('../IMG1/traders1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.second-img-carousel{
+    height: 80vh;
+    background-image: url('../IMG1/oficina.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.third-img-carousel{
+    height: 80vh;
+    background-image: url('../IMG1/traders2.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+/* Aplico flex para centrar el boton del index*/
+.container-index{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Le doy tamano al boton de Mas Info*/
+.container button{
+    width: 100px;
+}
+
+/* Agrego esta clase para que no se rompa el footer*/ 
+.footer-container{
+    max-width: 100vw;
+    margin: 0;
+}
+
+/*header*/
+.header{
+    background-color: #4e4e4e;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px black solid;
+}
+.logo{
+   
+    img{
+        width: auto;
+        height: auto;
+    }
+
+    &:hover{
+    transform: scale(1.08);
+    transition: all 0.7s;
+    }
+    span{
+    color:#fff;
+}
+}
+.nav-bar{
+    list-style: none;
+    padding: 0;
+    
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    
+    li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    }
+    li{
+    display: inline-block;
+    text-align: center;
+    }
+    li:hover{
+    background-color: black;
+}
+}
+/*footer*/
+
+footer {
+  background: #4e4e4e;
+  width: 100%;
+  height: 25%;
+  border-top: 2px black solid;
+  position: static;
+  bottom: 0;
+}
+footer .titulo {
+  color: black;
+  text-align: center;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+footer .redes-sociales {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 0;
+  padding: 8px;
+}
+footer .redes-sociales i {
+  font-size: 30px;
+  padding: 0 20px 0 20px;
+  color: #fff;
+}
+footer .redes-sociales i:hover {
+  transform: scale(2.08);
+  transition: all 0.7s;
+}
+footer .all-copy {
+  margin: 0;
+}
