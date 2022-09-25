@@ -28,23 +28,16 @@ img {
   background-image: url(../IMG1/Jumbotron.jpg);
   background-position: center;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
   color: black;
   text-shadow: 4px 4px 6px white;
   border-radius: 0%;
   margin-bottom: 0;
 }
-.jumbotron p {
-  font-size: 30px;
-}
 .jumbotron .textindex {
   text-align: center;
-  padding: 180px;
+  padding: 60px;
 }
-.jumbotron .letra {
-  font-size: 40px;
-}
-
 img {
   height: 550px;
   width: 40%;
@@ -91,7 +84,7 @@ h3 {
   border: 5px solid rgba(0, 0, 0, 0.623);
   margin-left: 15%;
   margin-top: 10%;
-  margin-bottom: 21%;
+  margin-bottom: 40%;
 }
 
 .c1 {
@@ -197,9 +190,9 @@ h3 {
   grid-row: span 2;
 }
 
-@media only screen and (min-width: 668px) {
+@media only screen and (min-width: 480px) {
   .galery-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (min-width: 780px) {
@@ -215,7 +208,7 @@ h3 {
   border-radius: 5px;
   margin-top: 10%;
   margin-left: 15%;
-  margin-bottom: 8%;
+  margin-bottom: 18%;
   text-align: center;
   justify-content: space-evenly;
   color: #fff;
@@ -236,12 +229,13 @@ h3 {
 
 .grid-productos {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 600px;
-  padding: 10px;
-  grid-gap: 15px;
+  grid-template-columns: repeat(2, 0.6fr);
+  grid-template-rows: 250px 250px;
+  grid-gap: 55px;
   margin-top: 10%;
   margin-bottom: 15%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .grid-productos .grid-productos {
   position: relative;
@@ -254,8 +248,8 @@ h3 {
   position: relative;
 }
 .grid-productos .galery--item--productos:hover {
-  transform: scale(1.08);
-  transition: all 0.7s;
+  transform: scale(0.8);
+  transition: all 1.7s;
 }
 .grid-productos .galery__img {
   width: 100%;
@@ -265,50 +259,9 @@ h3 {
 }
 .grid-productos h4 {
   color: black;
+  font-size: 25px;
   text-shadow: 2px 2px 5px white;
   text-align: center;
-}
-
-/* Agrego Imagenes del Carousel como Background*/
-.first-img-carousel {
-  height: 80vh;
-  background-image: url("../IMG1/traders1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.second-img-carousel {
-  height: 80vh;
-  background-image: url("../IMG1/oficina.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.third-img-carousel {
-  height: 80vh;
-  background-image: url("../IMG1/traders2.jpg");
-  background-position: top;
-  background-size: cover;
-}
-
-/* Aplico flex para centrar el boton del index*/
-.container-index {
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Le doy tamano al boton de Mas Info*/
-.container button {
-  width: 100px;
-}
-
-/* Agrego esta clase para que no se rompa el footer*/
-.footer-container {
-  max-width: 100vw;
-  margin: 0;
 }
 
 /*header*/
@@ -350,6 +303,14 @@ h3 {
 }
 .nav-bar li:hover {
   background-color: black;
+}
+@media screen and (max-width: 480px) {
+  .nav-bar .nav-bar {
+    width: 25%;
+  }
+  .nav-bar .logo img {
+    width: 25px;
+  }
 }
 
 /*footer*/
